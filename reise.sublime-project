@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "wp-content/themes/reise",
+            "folder_exclude_patterns": ["node_modules", "bower_components", "dist", "lang"]
+		}
+	]
+}

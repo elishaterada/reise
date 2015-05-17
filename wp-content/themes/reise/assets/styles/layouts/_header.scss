@@ -1,0 +1,50 @@
+.navbar-collapse {
+    text-align: center;
+}
+
+.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    @media (min-width: $screen-sm-min) {
+        display: inline-block;
+        margin: 0 auto;
+        float: none;
+    }
+    li {
+        @media (min-width: $screen-sm-min) {
+            float: none;
+            display: inline-block;
+        }
+        a {
+            @media (min-width: $screen-sm-min) {
+                display: inline-block;
+            }
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.4rem;
+        }
+
+        // Mobile menu separators
+        border-bottom: 1px solid $gray-lighter;
+        &:first-child {
+            // border-top: 1px solid $gray-lighter;
+        }
+
+        // Menu item separator
+        a:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -3px;
+            margin-top: -3px;
+            width: 4px;
+            height: 4px;
+            background: $brand-primary;
+            border-radius: 100%;
+        }
+        &:last-child a:after {
+            display: none;
+        }
+
+    }
+}

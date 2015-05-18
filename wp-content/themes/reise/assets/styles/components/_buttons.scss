@@ -1,0 +1,16 @@
+.btn {
+    padding: 0.75em 5em;
+    border-width: 1px;
+    font-weight: bold;
+    font-size: 0.85em;
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.btn-default {
+    &:hover {
+        color: $brand-primary;
+        border-color: $brand-primary;
+    }
+}

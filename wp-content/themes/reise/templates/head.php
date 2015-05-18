@@ -3,7 +3,7 @@
   <head>
     <script>
       WebFontConfig = {
-        google: { families: [ 'Lora:400,700,400italic:latin' ] }
+        google: { families: [ 'Lora:400,700,400italic:latin', 'Raleway:400,300:latin' ] }
       };
       (function() {
         var wf = document.createElement('script');

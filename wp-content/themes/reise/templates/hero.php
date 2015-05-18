@@ -1,11 +1,15 @@
 <?php
 
-if( is_singular() ):
+    $featured_image = '';
 
-    $featured_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+    // Use featured image if it's a post
+    if ( is_singular() ):
+        $featured_image = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
+    endif;
+
+    // Fallback URL
     if ( !$featured_image ):
-        // Fallback URL
-        $featured_image = '';
+        $featured_image = 'https://unsplash.it/1024/682/?image=690';
     endif;
 
 ?>
@@ -30,4 +34,4 @@ if( is_singular() ):
     </ul>
 </div>
 
-<?php endif;
+<?php

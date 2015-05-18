@@ -1,6 +1,16 @@
-<?php if( is_singular() ): ?>
+<?php
 
-<div id="hero" style="background-image: url('https://unsplash.it/1600/1067/?random');">
+if( is_singular() ):
+
+    $featured_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+    if ( !$featured_image ):
+        // Fallback URL
+        $featured_image = '';
+    endif;
+
+?>
+
+<div id="hero" style="background-image: url('<?= $featured_image; ?>');">
     <div class="logo">
         <?= bloginfo( 'name' ); ?>
     </div>

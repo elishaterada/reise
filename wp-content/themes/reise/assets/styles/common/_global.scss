@@ -46,19 +46,16 @@ a {
         height: auto;
         position: absolute;
         top: 0;
-        left: 0;
-        right: 0;
-        margin-left: 0;
-        margin-right: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
         min-width: 100%;
         min-height: 100%;
         z-index: 0;
       }
       @media (min-width: $screen-lg-min) {
-        top: -25%;
+        top: -35%;
       }
       @media (min-width: $screen-xl-min) {
-        top: -35%;
       }
       @media (min-width: $screen-xxl-min) {
       }

@@ -19,7 +19,7 @@ a {
     background-size: cover;
     overflow: hidden;
     position: relative;
-    height: 567px;
+    height: 720px;
     margin-bottom: 4em;
 
     // Image overlay
@@ -33,6 +33,41 @@ a {
         right: 0;
     }
 
+    // Video player
+
+    #featured-video {
+      display: none;
+      html.touch & {
+        display: none;
+      }
+      @media (min-width: $screen-md-min) {
+        display: block;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: 0;
+      }
+      @media (min-width: $screen-lg-min) {
+        top: -25%;
+      }
+      @media (min-width: $screen-xl-min) {
+        top: -35%;
+      }
+      @media (min-width: $screen-xxl-min) {
+      }
+      @media (min-width: $screen-xxxl-min) {
+      }
+      @media (min-width: $screen-xxxxl-min) {
+      }
+    }
+
     .logo, .description, .social {
         position: relative;
         z-index: 1;
@@ -41,7 +76,7 @@ a {
     }
 
     .logo {
-        margin-top: 3em;
+        margin-top: 4.5em;
         margin-bottom: 0.4em;
         font-size: 4em;
         color: #fff;
